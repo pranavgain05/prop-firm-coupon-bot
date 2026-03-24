@@ -22,7 +22,7 @@ async def main():
         posts = await gather(api.search(query, limit=20))
         for p in posts:
             if p.id > last_id:
-                bot.send_message(os.getenv("CHAT_ID"), f"{p.url}\n{p.rawContent}")
+                bot.send_message("YOUR_CHAT_ID_HERE", f"{p.url}\n{p.rawContent}")
                 last_id = max(last_id, p.id)
         await asyncio.sleep(5)
 
