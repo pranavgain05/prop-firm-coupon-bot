@@ -3,7 +3,7 @@ import telebot
 from twscrape import API, gather
 import os
 
-bot = telebot.TeleBot("8762357437:AAFAHjLWWZJ2Gq3AoYPJbe9wDX08k-HmAjE"))
+bot = telebot.TeleBot("8762357437:AAFAHjLWWZJ2Gq3AoYPJbe9wDX08k-HmAjE")
 api = API()
 
 WORDS = [
